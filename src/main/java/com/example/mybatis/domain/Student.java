@@ -2,14 +2,11 @@ package com.example.mybatis.domain;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Data
-@Entity(name = "STUDENTS")
 public class Student {
 
     @Id
@@ -17,6 +14,6 @@ public class Student {
     private Integer studId;
     private String name;
     private String email;
-    private Date dob;
+    private PhoneNumber phoneNumber;
     // setters and getters
 }
